@@ -32,6 +32,51 @@ button:hover {
     padding: 20px;
 }
 
+/* Rimuovi i margini predefiniti del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spinge logo e link ai lati opposti */
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 5%;
+    position: sticky; /* La tiene fissa in alto mentre scorri */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Rimuove i pallini della lista */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db; /* Cambia colore quando passi il mouse */
+}
+
+
 /* Quando lo schermo è più stretto di 600px... */
 @media (max-width: 600px) {
     body {
@@ -40,5 +85,15 @@ button:hover {
     }
     .container {
         flex-direction: column; /* Gli elementi tornano uno sopra l'altro */
+    }
+    .navbar {
+        flex-direction: column; /* Mette logo sopra e link sotto */
+        text-align: center;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin: 5px 10px;
     }
 }
