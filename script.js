@@ -2,6 +2,6 @@ const bottone = document.getElementById('mioBottone');
 const messaggio = document.getElementById('messaggio');
 
 bottone.addEventListener('click', () => {
-    messaggio.textContent = "Complimenti Robi! Hai appena vinto un bacino!";
+    messaggio.textContent = "Complimenti! Hai appena vinto un biscotto!";
     messaggio.style.color = "green";
 });
