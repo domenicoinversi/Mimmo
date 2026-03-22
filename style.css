@@ -70,13 +70,18 @@ button:hover {
 }
 
 .nav-links a {
+    padding: 8px 15px;
+    border-radius: 20px; /* Rende tonda l'area cliccabile */ 
+    /* transition: background 0.3s; */
     color: #9AAEAD;
     text-decoration: none; /* Rimuove la sottolineatura */
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #A24D5D; /* Cambia colore quando passi il mouse */
+    /* color: #A24D5D;  Cambia colore quando passi il mouse */
+    background-color: #157A6E; /* Il tuo verde petrolio */
+    color: white;
 }
 
 .nav-icon {
@@ -85,6 +90,7 @@ button:hover {
     margin-right: 10px; /* Spazio tra immagine e testo */
     vertical-align: middle; /* Allinea l'immagine al centro del testo */
 }
+
 /* Quando lo schermo è più stretto di 600px... */
 @media (max-width: 600px) {
     body {
