@@ -169,3 +169,75 @@ p {
     h1 { font-size: 2.4rem; }
     .navbar { padding: 15px 5%; }
 }
+
+/* CONTACT FORM STYLE */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: left; /* Il form si legge meglio allineato a sinistra */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    color: var(--accent-blue);
+}
+
+/* Stile comune per input, select e textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--text-main);
+    background-color: var(--bg-site);
+    transition: border-color 0.2s;
+}
+
+/* Evidenzia il campo quando l'utente ci clicca sopra */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-action);
+    background-color: var(--white);
+}
+
+textarea {
+    resize: vertical; /* Permette di allungarlo ma non di allargarlo sballando il layout */
+}
+
+#btn-invia {
+    width: 100%;
+    background-color: var(--accent-blue);
+    color: var(--white);
+    border: none;
+    padding: 16px;
+    font-family: 'Funnel Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+#btn-invia:hover {
+    background-color: var(--accent-action);
+}

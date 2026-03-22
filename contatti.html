@@ -20,9 +20,40 @@
     </nav>
 
     <main>
-        <h1>Scrivimi!</h1>
-        <p>Puoi contattarmi alla mail: mimmo@esempio.it</p>
-        <a href="index.html">Torna alla Home</a>
-    </main>
+        <h1>Richiedi una Quotazione</h1>
+        <p>Compila il modulo sottostante per ricevere informazioni tecniche o un preventivo personalizzato per i tuoi progetti 3D.</p>
+
+    <div class="contact-container">
+        <form action="#" method="POST" class="contact-form">
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo / Azienda</label>
+                <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi S.r.l." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Professionale</label>
+                <input type="email" id="email" name="email" placeholder="nome@azienda.it" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo">Tipo di Richiesta</label>
+                <select id="motivo" name="motivo">
+                    <option value="quotazione">Richiesta Quotazione (Preventivo)</option>
+                    <option value="processo">Informazioni sui Processi (FDM/SLA)</option>
+                    <option value="azienda">Informazioni sull'Azienda</option>
+                    <option value="altro">Altro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="messaggio">Dettagli del Progetto</label>
+                <textarea id="messaggio" name="messaggio" rows="6" placeholder="Descrivi il materiale, le dimensioni o il numero di pezzi richiesti..."></textarea>
+            </div>
+
+            <button type="submit" id="btn-invia">Invia Richiesta Tecnica</button>
+        </form>
+    </div>
+</main>
 </body>
 </html>
