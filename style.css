@@ -6,13 +6,13 @@ body {
 }
 
 header h1 {
-     color: #2c3e50;
+     color: #C2C5BB;
      /* color: #f4f4f4; */
 }
 
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: #B4654A;
+    color: #C2C5BB;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -21,7 +21,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #B4654A;
 }
 
 .container {
@@ -43,8 +43,8 @@ button:hover {
     display: flex;
     justify-content: space-between; /* Spinge logo e link ai lati opposti */
     align-items: center;
-    background-color: #333;
-    color: white;
+    background-color: #499F68;
+    color: #C2C5BB;
     padding: 1rem 5%;
     position: sticky; /* La tiene fissa in alto mentre scorri */
     top: 0;
@@ -67,7 +67,7 @@ button:hover {
 }
 
 .nav-links a {
-    color: white;
+    color: #C2C5BB;
     text-decoration: none; /* Rimuove la sottolineatura */
     transition: color 0.3s;
 }
