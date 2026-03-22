@@ -79,9 +79,9 @@ button:hover {
 }
 
 .nav-links a:hover {
-    /* color: #A24D5D;  Cambia colore quando passi il mouse */
+    color: #A24D5D;  Cambia colore quando passi il mouse */
     background-color: #157A6E; /* Il tuo verde petrolio */
-    color: white;
+    /* color: white; */
 }
 
 .nav-icon {
