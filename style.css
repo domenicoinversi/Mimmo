@@ -1,182 +1,171 @@
-/* 1. VARIABILI E RESET */
+/* 1. PALETTE INDUSTRIALE PULITA */
 :root {
-    --bg-dark: #0B3D39;       /* Verde bosco profondo per lo sfondo */
-    --primary-petrol: #157A6E; /* Il tuo verde petrolio originale */
-    --accent-gold: #D4AF37;    /* Oro per i dettagli importanti */
-    --text-light: #F0F4F3;     /* Bianco sporco per i testi */
-    --text-muted: #9AAEAD;    /* Grigio-verde per testi secondari */
-    --glass: rgba(255, 255, 255, 0.05); /* Effetto vetro trasparente */
+    --bg-site: #fcfcfc;        /* Bianco quasi assoluto */
+    --text-main: #1e293b;      /* Grigio fumo (molto leggibile) */
+    --text-muted: #64748b;     /* Grigio per dettagli secondari */
+    --accent-blue: #0f172a;    /* Blu Navy industriale */
+    --accent-action: #3b82f6;  /* Blu vivace per interazioni */
+    --border-color: #e2e8f0;   /* Linee di separazione sottili */
+    --white: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Evita che il padding sballi le dimensioni */
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gelasio', serif;
-    background-color: var(--bg-dark);
-    color: var(--text-light);
+    /* AGGIORNAMENTO FONT */
+    font-family: 'Funnel Sans', sans-serif;
+    background-color: var(--bg-site);
+    color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden; /* Evita scroll orizzontali fastidiosi */
+    -webkit-font-smoothing: antialiased;
 }
 
-/* 2. NAVBAR MODERNA "FLOATING" */
+/* 2. NAVBAR ARCHITETTONICA - LINEARE */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(21, 122, 110, 0.2); /* Sfondo petrolio trasparente */
-    backdrop-filter: blur(12px);         /* Effetto vetro sfocato */
-    -webkit-backdrop-filter: blur(12px); /* Per compatibilità Safari */
-    padding: 12px 40px;
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px auto;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--white);
+    padding: 1.2rem 5%;
+    border-bottom: 1px solid var(--border-color);
     position: sticky;
-    top: 20px;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-/* Selettore specifico per l'immagine dentro il div logo */
-.logo img {
-    height: 40px;       /* Altezza fissa per far stare il logo nella barra */
-    width: auto;        /* Mantiene le proporzioni (non schiaccia l'immagine) */
-    display: block;     /* Toglie spazi vuoti strani sotto l'immagine */
-    max-width: 150px;   /* Opzionale: evita che sia troppo larga se è un logo orizzontale */
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--accent-gold);
-    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800; /* Molto marcato per Funnel Sans */
+    font-size: 1.1rem;
+    color: var(--accent-blue);
+    letter-spacing: 0.5px;
     text-transform: uppercase;
+}
+
+.logo img {
+    height: 28px;
+    width: auto;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .nav-links a {
-    color: var(--text-light);
+    color: var(--text-muted);
     text-decoration: none;
-    padding: 8px 18px;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    background: var(--primary-petrol);
-    color: white;
-    transform: translateY(-2px);
+    color: var(--accent-action);
 }
 
-/* 3. LAYOUT PAGINA (MAIN) */
+/* 3. LAYOUT CENTRATO */
 main {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 0 20px;
     text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    background: linear-gradient(to right, #fff, var(--accent-gold));
-    -webkit-background-clip: text; /* Effetto testo sfumato */
-    -webkit-text-fill-color: transparent;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: 24px;
+    letter-spacing: -1.5px; /* Compattiamo il titolo per un look più moderno */
 }
 
 p {
     color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    font-size: 1.15rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
 }
 
-/* 4. BOTTONE E ELEMENTI INTERATTIVI */
+/* 4. BOTTONE "3D PRECISION" */
 #mioBottone {
-    background-color: var(--accent-gold);
-    color: var(--bg-dark);
+    background-color: var(--accent-blue);
+    color: var(--white);
     border: none;
-    padding: 16px 40px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 50px;
+    padding: 14px 34px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 2px; /* Angoli quasi vivi per massima serietà */
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
 }
 
 #mioBottone:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+    background-color: var(--accent-action);
+    transform: translateY(-1px);
 }
 
-#messaggio {
-    margin-top: 25px;
-    font-weight: bold;
-    color: var(--accent-gold);
-}
-
-/* 5. GRIGLIA PROGETTI (Per la pagina progetti.html) */
+/* 5. GRIGLIA PROGETTI */
 .progetti-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
 }
 
 .progetto-card {
-    background: var(--glass);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
     text-align: left;
-    transition: all 0.4s ease;
+    transition: border-color 0.3s ease;
 }
 
 .progetto-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-gold);
-    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-muted);
 }
 
 .progetto-card img {
     width: 100%;
-    height: 180px;
-    object-fit: cover; /* Ritaglia l'immagine senza deformarla */
-    border-radius: 12px;
-    margin-bottom: 15px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.progetto-card-body {
+    padding: 24px;
 }
 
 .progetto-card h3 {
-    color: var(--accent-gold);
-    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--accent-blue);
 }
 
 .progetto-card p {
-    font-size: 0.9rem;
-    margin-bottom: 0;
+    font-size: 0.95rem;
+    margin: 0;
+    color: var(--text-muted);
+    text-align: left;
 }
 
-/* 6. RESPONSIVE (Per cellulari) */
+/* 6. RESPONSIVE */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        border-radius: 20px;
-        padding: 20px;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }
+    h1 { font-size: 2.4rem; }
+    .navbar { padding: 15px 5%; }
 }
