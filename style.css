@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
+    font-family: 'Gelasio', sans-serif; 
+    background-color: #157A6E;
     text-align: center;
     padding: 50px;
 }
 
 header h1 {
-     /* color: #2c3e50; */
-     color: #f4f4f4;
+     color: #2c3e50;
+     /* color: #f4f4f4; */
 }
 
 button {
