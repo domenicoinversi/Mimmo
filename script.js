@@ -3,5 +3,5 @@ const messaggio = document.getElementById('messaggio');
 
 bottone.addEventListener('click', () => {
     messaggio.textContent = "Complimenti! Hai appena vinto un biscotto!";
-    messaggio.style.color = "White";
+    messaggio.style.color = "#9AAEAD";
 });
