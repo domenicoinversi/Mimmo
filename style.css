@@ -48,10 +48,15 @@ button:hover {
     align-items: center;
     background-color: #3C474B;
     color: #9AAEAD;
-    padding: 1rem 5%;
-    position: sticky; /* La tiene fissa in alto mentre scorri */
     top: 0;
     z-index: 1000;
+    /* padding: 1rem 5%;*/
+    padding: 10px 40px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 20px auto; /* Centra la navbar */
+    position: sticky; /* La tiene fissa in alto mentre scorri */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra per un effetto di profondità */
 }
 
 .logo {
@@ -70,18 +75,17 @@ button:hover {
 }
 
 .nav-links a {
+    display: inline-block; /* FONDAMENTALE per far vedere lo sfondo e il padding */
     padding: 8px 15px;
-    border-radius: 20px; /* Rende tonda l'area cliccabile */ 
-    /* transition: background 0.3s; */
+    border-radius: 20px;
     color: #9AAEAD;
-    text-decoration: none; /* Rimuove la sottolineatura */
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #A24D5D;  Cambia colore quando passi il mouse */
-    background-color: #157A6E; /* Il tuo verde petrolio */
-    /* color: white; */
+    background-color: #157A6E !important; /* L'uso di !important serve a forzare il colore se c'è un conflitto */
+    color: white !important;
 }
 
 .nav-icon {
