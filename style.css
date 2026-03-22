@@ -79,7 +79,12 @@ button:hover {
     color: #A24D5D; /* Cambia colore quando passi il mouse */
 }
 
-
+.nav-icon {
+    width: 40px;      /* Larghezza */
+    height: auto;     /* Mantiene le proporzioni */
+    margin-right: 10px; /* Spazio tra immagine e testo */
+    vertical-align: middle; /* Allinea l'immagine al centro del testo */
+}
 /* Quando lo schermo è più stretto di 600px... */
 @media (max-width: 600px) {
     body {
